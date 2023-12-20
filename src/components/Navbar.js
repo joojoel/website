@@ -37,7 +37,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            TRVL <i class="fab fa-typo3"></i>
+            JOEL <i class="fa-solid fa-circle-check"></i>
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fa-solid fa-times' : 'fa-solid fa-bars'} />

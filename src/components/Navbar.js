@@ -22,7 +22,15 @@ function Navbar() {
     showButton();
   }, []);
 
+  const hideMenu = () => {
+    if(window.innerWidth > 960) {
+      closeMobileMenu();
+    } 
+  };
+  
+  // Listeners
   window.addEventListener('resize', showButton);
+  window.addEventListener('resize', hideMenu);
 
   return (
     <>
@@ -31,7 +39,7 @@ function Navbar() {
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             TRVL <i class="fab fa-typo3"></i>
           </Link>
-          <div className='menu-icon' onClick={handleClick} on>
+          <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fa-solid fa-times' : 'fa-solid fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>

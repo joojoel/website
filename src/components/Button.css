@@ -8,6 +8,7 @@
     outline: none;
     border: none;
     cursor: pointer;
+    white-space: nowrap; /* Makes it so text doesn't wrap */
 }
 
 .btn--primary {

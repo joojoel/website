@@ -37,7 +37,8 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            <i class="fa-solid fa-arrow-up"></i>
+            Joel Myöhänen portfolio
+            {/* <i class="fa-solid fa-arrow-up"></i>  */}
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fa-solid fa-times' : 'fa-solid fa-bars'} />

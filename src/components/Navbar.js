@@ -38,7 +38,6 @@ function Navbar() {
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             Joel Myöhänen portfolio
-            {/* <i class="fa-solid fa-arrow-up"></i>  */}
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fa-solid fa-times' : 'fa-solid fa-bars'} />
@@ -46,17 +45,17 @@ function Navbar() {
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
+                Introduction
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                Services
+                Info
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                Products
+                Projects
               </Link>
             </li>
             <li className='nav-item'>

@@ -43,10 +43,18 @@ video {
     margin-left: 4px;
 }
 
+/* From here on mobile settings */
 @media screen and (max-width: 960px) {
     .hero-container > h1 {
         font-size: 70px;
         margin-top: -150px;
+    }
+    video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: -1;
     }
 }
 

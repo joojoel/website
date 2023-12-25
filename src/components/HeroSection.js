@@ -6,23 +6,23 @@ import './HeroSection.css';
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <video src='/videos/video-4.mp4' autoPlay loop muted/>
-      <h1>HALUAN KALJAA</h1>
-      <p>OTA MINUT TÖIHIN</p>
+      <video src='/videos/video-3.mp4' autoPlay loop muted/>
+      <h1>Joel Myöhänen</h1>
+      <p>software developer</p>
       <div className='hero-btns'>
         <Button 
           className='btns' 
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          GET STARTED
+          Contact 😃
         </Button>
         <Button 
           className='btns' 
           buttonStyle='btn--primary'
           buttonSize='btn--large'
         >
-          WATCH TRAILER <i className='far fa-play-circle' />
+          Info <i className='far fa-play-circle' />
         </Button>
       </div>
     </div>

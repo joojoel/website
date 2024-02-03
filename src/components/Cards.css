@@ -1,18 +1,19 @@
 .cards {
     padding: 4rem;
-    background: #fff;
+    background: #141414;
   }
   
   h1 {
     text-align: center;
+    color: #fff;
   }
   
   .cards__container {
-    display: flex;
+    display: grid;
     flex-flow: column;
     align-items: center;
     max-width: 1120px;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
   }
   
@@ -25,20 +26,22 @@
     margin-bottom: 24px;
   }
   
+  /*For CardItem.js*/
   .cards__item {
     display: flex;
     flex: 1;
     margin: 0 1rem;
     border-radius: 10px;
+    background-color: #fff;
   }
   
   .cards__item__link {
     display: flex;
     flex-flow: column;
     width: 100%;
-    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.156);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(255, 255, 255, 0.189));
+    filter: drop-shadow(0 6px 20px rgba(255, 255, 255, 0.268));
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
@@ -66,7 +69,7 @@
     font-size: 12px;
     font-weight: 700;
     color: #fff;
-    background-color: #1f98f4;
+    background-color: #131313;
     box-sizing: border-box;
   }
   

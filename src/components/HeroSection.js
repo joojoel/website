@@ -6,8 +6,11 @@ import './HeroSection.css';
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <h1>Joel Myöhänen</h1>
-      <p>software developer</p>
+      <h2>Welcome!</h2>
+      <p>
+          This is the personal site of Joel Myöhänen, a second year computer science
+          student at the University of Eastern finland. 
+      </p>
       <div className='hero-btns'>
         <Button 
           className='btns' 

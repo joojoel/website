@@ -11,7 +11,7 @@ function Navbar() {
   const closeMobileMenu = () => setClick(false);
 
   const showButton = () => {
-    if(window.innerWidth <= 960) {
+    if(window.innerWidth <= 960) {    
       setButton(false);
     } else {
       setButton(true);
@@ -36,9 +36,41 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            Joel Myöhänen portfolio
-          </Link>
+          <div className='navbar-socials' onClick={closeMobileMenu}>
+
+              <div className='nav-social'>
+                <Link
+                  class='social-icon-link github'
+                  to='/'
+                  target='_blank'
+                  aria-label='Github'
+                >
+                  <i class='fab fa-github' />
+                </Link>
+              </div>
+
+              <div className='nav-social'>
+                <Link
+                  class='social-icon-link linkedin'
+                  to='/'
+                  target='_blank'
+                  aria-label='LinkedIn'
+                >
+                  <i class='fab fa-linkedin' />
+                </Link>
+              </div>
+
+              <div className='nav-social'>
+                <Link
+                  class='social-icon-link twitter'
+                  to='/'
+                  target='_blank'
+                  aria-label='LinkedIn'
+                >
+                  <i class='fas fa-envelope' />
+                </Link>
+              </div>
+          </div>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fa-solid fa-times' : 'fa-solid fa-bars'} />
           </div>
@@ -50,7 +82,7 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                Info
+                Skills
               </Link>
             </li>
             <li className='nav-item'>
@@ -60,12 +92,12 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link to='/sign-up' className='nav-links' onClick={closeMobileMenu}>
-                Sign Up
+                CV
               </Link>
             </li>
           </ul>
             {button && <Button buttonStyle='btn--outline'>
-              SIGN UP
+              Contact
             </Button>}
         </div>
       </nav>

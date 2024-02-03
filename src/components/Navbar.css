@@ -17,9 +17,8 @@
     height: 80px;
     max-width: 1500px;
   }
-  
 
-  .navbar-logo {
+  .navbar-socials {
     color: #fff;
     justify-self: start;
     margin-left: 20px;
@@ -31,11 +30,20 @@
     white-space: nowrap; /* Makes it so text doesn't wrap */
   }
   
-  .fa-arrow-up {
-    margin-left: 0.5rem;
-    font-size: 1.8rem;
+  .nav-social {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
   }
   
+  .nav-social:hover {
+    border-bottom: 4px solid #fff;
+    transition: all 0.2s ease-out;
+  }
+
   .nav-menu {
     display: grid;
     grid-template-columns: repeat(4, auto);

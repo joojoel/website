@@ -33,40 +33,44 @@ function Navbar() {
 
   return (
     <>
-      <nav className='navbar'>
-        <div className='navbar-container'>
-          <div className='navbar-socials' onClick={closeMobileMenu}>
 
-              <div className='nav-social'>
-                <Link
-                  class='social-icon-link github'
-                  to='https://github.com/joojoel'
-                  target='_blank'
-                  aria-label='Github'
-                >
-                  <i class='fab fa-github' />
-                </Link>
-              </div>
-
-              <div className='nav-social'>
-                <Link
-                  class='social-icon-link linkedin'
-                  to='https://www.linkedin.com/in/joel-my%C3%B6h%C3%A4nen-b1094320a/'
-                  target='_blank'
-                  aria-label='LinkedIn'
-                >
-                  <i class='fab fa-linkedin' />
-                </Link>
-              </div>
-
+      {/* Social floating menu */}
+      <div className='social'>
+        <div className='social-container' onClick={closeMobileMenu}>
+          
+          <div className='social-item'>
+            <Link
+              class='social-icon-link github'
+              to='https://github.com/joojoel'
+              target='_blank'
+              aria-label='Github'
+            >
+              <i class='fab fa-github' />
+            </Link>
           </div>
 
+          <div className='social-item'>
+            <Link
+              class='social-icon-link linkedin'
+              to='https://www.linkedin.com/in/joel-my%C3%B6h%C3%A4nen-b1094320a/'
+              target='_blank'
+              aria-label='LinkedIn'
+            >
+              <i class='fab fa-linkedin' />
+            </Link>
+          </div>
+
+        </div>  
+      </div>
+
+      <nav className='navbar'>
+        <div className='navbar-container'>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fa-solid fa-times' : 'fa-solid fa-bars'} />
           </div>
           
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
+          <div className={click ? 'nav-menu active' : 'nav-menu'}>
+            <div className='nav-item'>
               <Link
                 className='nav-links'
                 onClick={() => {
@@ -76,8 +80,8 @@ function Navbar() {
               >
                 Home
               </Link>
-            </li>
-            <li className='nav-item'>
+            </div>
+            <div className='nav-item'>
               <Link 
                 className='nav-links'
                 onClick={() => {
@@ -87,8 +91,8 @@ function Navbar() {
               >
                 Skills
               </Link>
-            </li>
-            <li className='nav-item'>
+            </div>
+            <div className='nav-item'>
               <Link 
                 className='nav-links'
                 onClick={() => {
@@ -98,8 +102,8 @@ function Navbar() {
               >
                 Projects
               </Link>
-            </li>
-            <li className='nav-item'>
+            </div>
+            <div className='nav-item'>
               <Link 
                 to='' 
                 className='nav-links' 
@@ -107,8 +111,8 @@ function Navbar() {
               >
                 CV
               </Link>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </nav>
     </>

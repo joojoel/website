@@ -9,10 +9,11 @@
   }
   
   .cards__container {
-    display: contents;
+    display: flex;
+    flex-flow: column;
     align-items: center;
+    justify-content: center;
     max-width: 1120px;
-    width: 80%;
     margin: 0 auto;
   }
   
@@ -20,19 +21,23 @@
     display: flex;
     flex-flow: wrap;
     align-items: center;
+    justify-content: center;
     position: relative;
-    margin: 100px 100px 100px;
+    margin-bottom: 100px; 
   }
   
   /*Project cards*/
 
   .cards__item {
     display: flex;
-    flex: 1;
-    margin: 0 1rem;
+    flex: 2 1 auto;
+    margin: 10px;
+    padding: 10px;
     border-radius: 12px;
     background-color: #fff;
-    margin: 10px;
+    max-width: 220px;
+    min-height: 320px;
+    justify-content: center;
   }
   
   .cards__item__link {
@@ -90,11 +95,11 @@
   }
   
   .cards__item__info {
-    padding: 20px 30px 30px;
+    padding: 10px 10px 10px;
   }
   
   .cards__item__text {
-    color: #252e48;
+    color: #141414;
     font-size: 18px;
     line-height: 24px;
   }
@@ -102,14 +107,21 @@
 /*Skill cards*/
 
   .skill_item {
-    display: grid;
-    flex: 1;
-    margin: 0 1rem;
+    display: flex;
+    flex: 2 1 auto;
     border-radius: 10px;
     background-color: #fff;
     padding: 10px;
     margin: 10px;
-    text-align: center;
+    max-width: 220px;
+    justify-content: center;
+  }
+
+  .skill_item_text {
+    color: #141414;
+    font-size: 18px;
+    line-height: 24px;
+    white-space: nowrap;
   }
 
   .skill_item:hover {
@@ -117,18 +129,6 @@
     cursor: pointer;
   }
 
-  .skill_item-info {
-    padding: 10px 10px 10px;
-  }
-
-  .skill_item_text {
-    color: #141414;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    white-space: nowrap;
-  }
-  
   @media only screen and (min-width: 1200px) {
     .content__blog__container {
       width: 84%;

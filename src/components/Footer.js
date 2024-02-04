@@ -5,37 +5,50 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <div className='footer-container'>
+
       <div className='footer-subscription'>
         <div className='footer-subscription-heading'>
-          <h1 id = "contact">Contact information</h1>
+          <h2 id = "contact">Contact information</h2>
         </div>
         <p>joeleppu@gmail.com</p>
       </div>
-      <section class='social-media'>
-        <div class='social-media-wrap'>
-          <div class='social-icons'>
 
-            <Link
-              class='social-icon-link github'
+      <div className='footer-links'>
+
+        <div className='footer-link-items'>
+          <Link
+              class='social-icon-link'
               to='https://github.com/joojoel'
               target='_blank'
               aria-label='Github'
             >
-              <i class='fab fa-github' />
+              Github
             </Link>
+        </div>
 
+        <div className='footer-link-items'>
             <Link
-              class='social-icon-link linkedin'
+              class='social-icon-link'
               to='https://www.linkedin.com/in/joel-my%C3%B6h%C3%A4nen-b1094320a/'
+              target='testi'
+              aria-label='LinkedIn'
+            >
+              LinkedIn
+            </Link>
+        </div>
+
+        <div className='footer-link-items'>
+            <Link
+              class='social-icon-link'
+              to=''
               target='_blank'
               aria-label='LinkedIn'
             >
-              <i class='fab fa-linkedin' />
+              CV
             </Link>
-
-          </div>
         </div>
-      </section>
+
+      </div>
     </div>
   );
 }

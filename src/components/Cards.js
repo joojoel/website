@@ -10,7 +10,9 @@ function Cards() {
     <div className="cards">
       <div className="cards__container">
 
-      <h1 id="skills">Skills</h1>
+        <div className="cards__wrapper">
+          <h1 id="skills">Skills</h1>
+        </div>
 
         <div className="cards__wrapper">
               <Skill
@@ -67,36 +69,38 @@ function Cards() {
               />
         </div>
 
-        <h1 id="projects">Projects</h1>
+        <div className="cards__wrapper">
+          <h1 id="projects">Projects</h1>
+        </div>
 
         <div className="cards__wrapper"> 
               <Project 
-                src="images/img-1.jpg"
+                src="logo192.png"
                 text="Made with react js"
                 label="Website"
                 path="/"
               />
               <Project 
-                src="images/img-3.jpg"
+                src="logo192.png"
                 text="A simple physics simulation made with javafx"
                 label="Javaball"
                 path="/"
               />
               <Project 
-                src="images/img-4.jpg"
+                src="logo192.png"
                 text="A digital task tracking platform"
                 label="Taskimatti"
                 path="/"
               />
               <Project 
-                src="images/img-6.jpg"
+                src="logo192.png"
                 text="A short puzzle game about moving boxes"
                 label="Sticky boy"
                 path="/"
               />
 
               <Project 
-                src="images/img-7.jpg"
+                src="logo192.png"
                 text="Made in a few days during a game jam"
                 label="VPE"
                 path="/"

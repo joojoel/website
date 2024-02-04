@@ -99,7 +99,7 @@ function Cards() {
                 src="images/img-7.jpg"
                 text="Made in a few days during a game jam"
                 label="VPE"
-                path="/services"
+                path="/"
               />
         </div>
 

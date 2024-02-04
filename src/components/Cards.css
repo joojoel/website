@@ -1,6 +1,6 @@
 .cards {
     padding: 4rem;
-    background: #141414;
+    background: #171717;
   }
   
   h1 {
@@ -9,8 +9,7 @@
   }
   
   .cards__container {
-    display: grid;
-    flex-flow: column;
+    display: contents;
     align-items: center;
     max-width: 1120px;
     width: 80%;
@@ -18,30 +17,28 @@
   }
   
   .cards__wrapper {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
     position: relative;
-    margin: 50px 0 45px;
+    margin: 100px 100px 100px;
   }
   
-  .cards__items {
-    margin-bottom: 24px;
-  }
-  
-  /*For CardItem.js*/
+  /*Project cards*/
+
   .cards__item {
     display: flex;
     flex: 1;
     margin: 0 1rem;
-    border-radius: 10px;
+    border-radius: 12px;
     background-color: #fff;
+    margin: 10px;
   }
   
   .cards__item__link {
     display: flex;
     flex-flow: column;
     width: 100%;
-    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.156);
-    -webkit-filter: drop-shadow(0 6px 20px rgba(255, 255, 255, 0.189));
-    filter: drop-shadow(0 6px 20px rgba(255, 255, 255, 0.268));
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
@@ -101,6 +98,36 @@
     font-size: 18px;
     line-height: 24px;
   }
+
+/*Skill cards*/
+
+  .skill_item {
+    display: grid;
+    flex: 1;
+    margin: 0 1rem;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .skill_item:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .skill_item-info {
+    padding: 10px 10px 10px;
+  }
+
+  .skill_item_text {
+    color: #141414;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    white-space: nowrap;
+  }
   
   @media only screen and (min-width: 1200px) {
     .content__blog__container {
@@ -111,11 +138,5 @@
   @media only screen and (min-width: 1024px) {
     .cards__items {
       display: flex;
-    }
-  }
-  
-  @media only screen and (max-width: 1024px) {
-    .cards__item {
-      margin-bottom: 2rem;
     }
   }

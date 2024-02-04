@@ -7,7 +7,7 @@ video {
 }
 
 .hero-container {
-    background-color: rgb(40, 40, 40); /* url('/public/images/img-home.jpg') center center/cover no-repeat;*/
+    background-color: rgb(40, 40, 40);
     height: 100vh;
     width: 100%;
     display: flex;
@@ -28,7 +28,7 @@ video {
     margin: 20px;
     text-align: center;
     color: #fff;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .hero-btns {
@@ -49,13 +49,6 @@ video {
         font-size: 70px;
         margin-top: -150px;
     }
-    video {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        z-index: -1;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -65,7 +58,7 @@ video {
     }
 
     .hero-container > p {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .btn-mobile {

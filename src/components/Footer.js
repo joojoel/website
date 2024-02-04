@@ -1,54 +1,38 @@
 import React from 'react';
 import './Footer.css';
-import { Button } from './Button';
 import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
     <div className='footer-container'>
+      <div className='footer-subscription'>
+        <div className='footer-subscription-heading'>
+          <h1 id = "contact">Contact information</h1>
+        </div>
+        <p>joeleppu@gmail.com</p>
+      </div>
       <section class='social-media'>
         <div class='social-media-wrap'>
           <div class='social-icons'>
+
             <Link
-              class='social-icon-link facebook'
-              to='/'
+              class='social-icon-link github'
+              to='https://github.com/joojoel'
               target='_blank'
-              aria-label='Facebook'
+              aria-label='Github'
             >
-              <i class='fab fa-facebook-f' />
+              <i class='fab fa-github' />
             </Link>
+
             <Link
-              class='social-icon-link instagram'
-              to='/'
-              target='_blank'
-              aria-label='Instagram'
-            >
-              <i class='fab fa-instagram' />
-            </Link>
-            <Link
-              class='social-icon-link youtube'
-              to='/'
-              target='_blank'
-              aria-label='Youtube'
-            >
-              <i class='fab fa-youtube' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='Twitter'
-            >
-              <i class='fab fa-twitter' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
+              class='social-icon-link linkedin'
+              to='https://www.linkedin.com/in/joel-my%C3%B6h%C3%A4nen-b1094320a/'
               target='_blank'
               aria-label='LinkedIn'
             >
               <i class='fab fa-linkedin' />
             </Link>
+
           </div>
         </div>
       </section>

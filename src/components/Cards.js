@@ -1,29 +1,108 @@
 import React from "react";
 
-import CardItem from "./CardItem";
-import CardGrid from './CardGrid';
+import Project from "./Project";
+import Skill from "./Skill";
 
 import "./Cards.css"
 
 function Cards() {
   return (
     <div className="cards">
-      <h1>My skills:</h1>
       <div className="cards__container">
+
+      <h1 id="skills">Skills</h1>
+
         <div className="cards__wrapper">
-            <CardGrid>
-              { Array(100).fill().map((_, i) => (
-                  <CardItem 
-                    key={i}
-                    src="images/img-9.jpg"
-                    text="Explore the hidden waterfall deep inside the Amazon Jungle"
-                    label="lololotrollolol"
-                    path="/services"
-                  />
-                ))
-              }
-            </CardGrid>
+              <Skill
+                text="Java"
+              />
+              <Skill
+                text="C++"
+              />
+              <Skill
+                text="Web developement"
+              />
+              <Skill
+                text="React"
+              />
+              <Skill
+                text="Python"
+              />
+              <Skill
+                text="Data science"
+              />
+              <Skill
+                text="C#"
+              />
+              <Skill
+                text="SQL"
+              />
+              <Skill
+                text="Game developement"
+              />
+              <Skill
+                text="Vue"
+              />
+              <Skill
+                text="Tailwind"
+              />
+
+              <Skill
+                text="SFML"
+              />
+
+              <Skill
+                text="GCC"
+              />
+
+              <Skill
+                text="Make"
+              />
+
+              <Skill
+                text="Cmake"
+              />
+              <Skill
+                text="R"
+              />
         </div>
+
+        <h1 id="projects">Projects</h1>
+
+        <div className="cards__wrapper"> 
+              <Project 
+                src="images/img-1.jpg"
+                text="Made with react js"
+                label="Website"
+                path="/"
+              />
+              <Project 
+                src="images/img-3.jpg"
+                text="A simple physics simulation made with javafx"
+                label="Javaball"
+                path="/"
+              />
+              <Project 
+                src="images/img-4.jpg"
+                text="A digital task tracking platform"
+                label="Taskimatti"
+                path="/"
+              />
+              <Project 
+                src="images/img-6.jpg"
+                text="A short puzzle game about moving boxes"
+                label="Sticky boy"
+                path="/"
+              />
+
+              <Project 
+                src="images/img-7.jpg"
+                text="Made in a few days during a game jam"
+                label="VPE"
+                path="/services"
+              />
+        </div>
+
       </div>
     </div>
   )

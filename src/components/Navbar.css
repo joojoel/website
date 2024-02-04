@@ -19,15 +19,14 @@
   }
 
   .navbar-socials {
+    display: flex;
     color: #fff;
     justify-self: start;
-    margin-left: 20px;
+    margin-left: 10px;
     cursor: pointer;
     text-decoration: none;
     font-size: 1.2rem;
-    display: flex;
     align-items: center;
-    white-space: nowrap; /* Makes it so text doesn't wrap */
   }
   
   .nav-social {
@@ -66,6 +65,7 @@
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
+    font-size: 26px;
   }
   
   .nav-links:hover {

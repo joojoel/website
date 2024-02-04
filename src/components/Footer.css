@@ -13,15 +13,13 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-  
     margin-bottom: 24px;
     padding: 24px;
     color: #fff;
   }
   
   .footer-subscription > p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-      'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
   }
   
   .footer-subscription-heading {

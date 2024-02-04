@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import { Button } from './Button';
 
 function Navbar() {
 
@@ -41,7 +40,7 @@ function Navbar() {
               <div className='nav-social'>
                 <Link
                   class='social-icon-link github'
-                  to='/'
+                  to='https://github.com/joojoel'
                   target='_blank'
                   aria-label='Github'
                 >
@@ -52,7 +51,7 @@ function Navbar() {
               <div className='nav-social'>
                 <Link
                   class='social-icon-link linkedin'
-                  to='/'
+                  to='https://www.linkedin.com/in/joel-my%C3%B6h%C3%A4nen-b1094320a/'
                   target='_blank'
                   aria-label='LinkedIn'
                 >
@@ -60,45 +59,56 @@ function Navbar() {
                 </Link>
               </div>
 
-              <div className='nav-social'>
-                <Link
-                  class='social-icon-link twitter'
-                  to='/'
-                  target='_blank'
-                  aria-label='LinkedIn'
-                >
-                  <i class='fas fa-envelope' />
-                </Link>
-              </div>
           </div>
+
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fa-solid fa-times' : 'fa-solid fa-bars'} />
           </div>
+          
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Introduction
+              <Link
+                className='nav-links'
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  closeMobileMenu();
+                }}
+              >
+                Home
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
+              <Link 
+                className='nav-links'
+                onClick={() => {
+                  window.location.replace("/#skills");
+                  closeMobileMenu();
+                }}
+              >
                 Skills
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
+              <Link 
+                className='nav-links'
+                onClick={() => {
+                  window.location.replace("/#projects");
+                  closeMobileMenu();
+                }}
+              >
                 Projects
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='/sign-up' className='nav-links' onClick={closeMobileMenu}>
+              <Link 
+                to='' 
+                className='nav-links' 
+                onClick={closeMobileMenu}
+              >
                 CV
               </Link>
             </li>
           </ul>
-            {button && <Button buttonStyle='btn--outline'>
-              Contact
-            </Button>}
         </div>
       </nav>
     </>

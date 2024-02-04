@@ -12,7 +12,8 @@ children,
 type,
 onClick,
 buttonStyle,
-buttonSize
+buttonSize,
+path
 }) => {
   // If buttonStyle in STYLES checkButtonStyle = buttonStyle, else = 0
   const checkButtonStyle = STYLES.includes(buttonStyle) 
@@ -23,7 +24,10 @@ buttonSize
   SIZES[0];
 
   return (
-    <Link to='/sign-up' className='btn-mobile'>
+    <Link 
+      to='/'
+      className='btn-mobile'
+    >
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}

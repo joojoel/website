@@ -14,6 +14,6 @@ Transition: menu fadettaa eri väriseksi kun painaa hampurilaisnappia
 
 Kielen voisi muuttaa ylhäällä olevasta napista jolloin se on eng/fin
 
-Ekana normaali video, näytössä lukee click here ja klikatessa elementit tulevat hienosti näkyville. video tummenee taustalle
+sivuun social media juttu jossa hienot animaatiot
 
-- Hampurilaismenun uusiminen tailwindillä
+Nuolet ylös ja alas joilla voi siirtyä sectionista toiseen

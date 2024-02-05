@@ -65,6 +65,7 @@ function Navbar() {
 
       <nav className='navbar'>
         <div className='navbar-container'>
+
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fa-solid fa-times' : 'fa-solid fa-bars'} />
           </div>
@@ -105,11 +106,13 @@ function Navbar() {
             </div>
             <div className='nav-item'>
               <Link 
-                to='' 
                 className='nav-links' 
-                onClick={closeMobileMenu}
+                onClick={() => {
+                  window.location.replace("/#contact");
+                  closeMobileMenu();
+                }}
               >
-                CV
+                Contact
               </Link>
             </div>
           </div>

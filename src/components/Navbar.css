@@ -134,6 +134,8 @@
     .fa-times {
       color: #fff;
       font-size: 3rem;
+      margin-block: -3px;
+
     }
   
     .nav-links-mobile {

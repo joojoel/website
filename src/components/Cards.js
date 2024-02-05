@@ -75,38 +75,37 @@ function Cards() {
 
         <div className="cards__wrapper"> 
               <Project 
-                src="logo192.png"
+                src="images/welcome.PNG"
                 text="Made with react js"
                 label="Website"
-                path="/"
+                path="https://github.com/joojoel/website"
               />
               <Project 
-                src="logo192.png"
+                src="images/ball.PNG"
                 text="A simple physics simulation made with javafx"
                 label="Javaball"
-                path="/"
+                path="https://github.com/joojoel/javaball"
               />
               <Project 
-                src="logo192.png"
+                src="images/vue.png"
                 text="A digital task tracking platform"
                 label="Taskimatti"
-                path="/"
+                path="https://github.com/taskimatti/taskimatti"
               />
               <Project 
-                src="logo192.png"
+                src="images/stick.PNG"
                 text="A short puzzle game about moving boxes"
                 label="Sticky boy"
-                path="/"
+                path="https://gamejolt.com/games/stickyboy/487009"
               />
 
               <Project 
-                src="logo192.png"
+                src="images/escape.PNG"
                 text="Made in a few days during a game jam"
                 label="VPE"
-                path="/"
+                path="https://gamejolt.com/games/vampireprisonescape/496867"
               />
         </div>
-
       </div>
     </div>
   )

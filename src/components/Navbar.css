@@ -15,7 +15,7 @@
 }
 
 .social-icon-link {
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(0, 0, 0, 0.6);
     font-size: 40px;
 }
 
@@ -30,7 +30,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #131313;
+    background: var(--darker);
     height: 80px;
     font-size: 1.2rem;
     position: sticky;
@@ -55,7 +55,7 @@
 }
 
 .nav-links {
-    color: #fff;
+    color: var(--lighter);
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -65,7 +65,7 @@
 }
 
 .nav-links:hover {
-    border-bottom: 4px solid #fff;
+    border-bottom: 4px solid var(--lighter);
     transition: all 0.2s ease-out;
 }
 
@@ -74,6 +74,7 @@
 }
 
 .menu-icon {
+    z-index: 2000;
     display: none;
 }
 
@@ -88,22 +89,21 @@
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	height: 50vh;
+	height: 0vh;
 	position: absolute;
-	top: 80px;
-	left: -100%;
-	opacity: 1;
+	top: -100vh;
+	left: 0;
+	opacity: 0;
 	transition: all 0.5s ease;
+	border-bottom: 8px solid var(--dark);
     }
 
     .nav-menu.active {
-	align-items: center;
-	background: #131313;
-	left: 0;
+	background: var(--darker);
+	height: 80vh;
+	top: 0;
 	opacity: 1;
 	transition: all 0.5s ease;
-	z-index: 1;
-	height: 50vh;
     }
     
     .nav-links {
@@ -114,8 +114,8 @@
     }
     
     .nav-links:hover {
-        background-color: #fff;
-        color: #131313;
+        background-color: var(--lighter);
+        color: var(--darker);
         border-radius: 0;
     }
     
@@ -129,12 +129,12 @@
     }
     
     .fa-bars {
-        color: #fff;
+        color: var(--lightest);
         font-size: 2.6rem;
     }
 
     .fa-times {
-	color: #fff;
+	color: var(--lightest);
 	font-size: 3rem;
 	margin-block: -3px;
 
@@ -149,15 +149,15 @@
 	text-decoration: none;
 	font-size: 1.5rem;
 	background-color: transparent;
-	color: #fff;
+	color: var(--lighter);
 	padding: 14px 20px;
-	border: 1px solid #fff;
+	border: 1px solid var(--lighter);
 	transition: all 0.3s ease-out;
     }
     
     .nav-links-mobile:hover {
-	background: #fff;
-	color: #131313;
+	background: var(--lighter);
+	color: var(--darker);
 	transition: 250ms;
     }
 }

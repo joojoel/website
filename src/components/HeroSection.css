@@ -7,7 +7,7 @@ video {
 }
 
 .hero-container {
-    background-color: rgb(40, 40, 40);
+    background-color: var(--lighter);
     height: 100vh;
     width: 100%;
     display: flex;
@@ -20,23 +20,19 @@ video {
 }
 
 .hero-container > h2 {
-    color: #fff;
+    color: var(--darker);
     margin-top: -100px;
 }
 
 .hero-container > p {
     margin: 20px;
     text-align: center;
-    color: #fff;
+    color: var(--darker);
     font-size: 24px;
 }
 
 .hero-btns {
     margin-top: 32px;
-}
-
-.fa-play-circle {
-    margin-left: 4px;
 }
 
 /* From here on mobile settings */

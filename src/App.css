@@ -1,10 +1,14 @@
-* {
+*
+{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'DejaVu Sans Mono';
     scroll-behavior: smooth;
-  }
-  
-
-  
+    --lightest: #FFF;
+    --lighter: #E6FF94;
+    --light: #9DDE8B;
+    --dark: #40A578; /* highlight */
+    --darker: #006769;
+    --darkest: #131313;
+}

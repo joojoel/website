@@ -66,7 +66,8 @@
 }
 
 .nav-links:hover {
-    border-bottom: 4px solid var(--lighter);
+    background: var(--dark);
+    color: var(--lightest);
     transition: all 0.2s ease-out;
 }
 
@@ -94,8 +95,8 @@
 	position: absolute;
 	top: -60vh;
 	left: 0;
-	transition: all 0.4s ease;
 	border-bottom: 0px;
+	transition: all 0.4s ease;
     }
 
     .nav-menu.active {

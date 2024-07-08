@@ -87,12 +87,6 @@ function Cards() {
                 path="https://github.com/joojoel/javaball"
               />
               <Project 
-                src="images/vue.png"
-                text="A digital task tracking platform"
-                label="Taskimatti"
-                path="https://github.com/taskimatti/taskimatti"
-              />
-              <Project 
                 src="images/stick.PNG"
                 text="A short puzzle game about moving boxes"
                 label="Sticky boy"

@@ -8,8 +8,7 @@ function HeroSection() {
     <div className='hero-container'>
       <h2 id='home'>Welcome!</h2>
         <p>
-            This is the personal site of Joel Myöhänen, a second year computer science
-            student at the University of Eastern Finland. 
+            This is the personal site of Joel
         </p>
       <div className='hero-btns'>
         <Button 

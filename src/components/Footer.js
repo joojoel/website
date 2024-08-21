@@ -37,17 +37,6 @@ function Footer() {
             </Link>
         </div>
 
-        <div className='footer-link-items'>
-            <Link
-              class='social-icon-link'
-              to='https://drive.google.com/file/d/1nqKWDpm05dQDor_-mFiHwec2ICdlHbRY/view?usp=sharing'
-              target='_blank'
-              aria-label='LinkedIn'
-            >
-              CV
-            </Link>
-        </div>
-
       </div>
     </div>
   );
